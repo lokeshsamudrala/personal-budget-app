@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import BarChart from '../Barchart/Barchart';
 import LineChart from '../Linechart/Linechart';
 import PieChart from '../Piechart/Piechart';
-import { Chart } from 'chart.js/auto';
+
 
 function Dashboard() {
 
