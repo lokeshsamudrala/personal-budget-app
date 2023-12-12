@@ -11,7 +11,7 @@ export default function LineChart() {
     
     useEffect(() => {
         
-        axios.get('http://localhost:5000/api/budgets/user')
+        axios.get('http://143.198.233.236:5000/api/budgets/user')
         .then(res => {
             var l=[];
             var d =[];
@@ -31,7 +31,7 @@ export default function LineChart() {
             
             })
 
-        axios.get('http://localhost:5000/api/expenses/user')
+        axios.get('http://143.198.233.236:5000/api/expenses/user')
         .then(res => {
             var e=[];
             var et = [];

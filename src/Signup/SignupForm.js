@@ -12,7 +12,7 @@ const SignupForm = ({ onSignup }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signup', {
+      const response = await axios.post('http://143.198.233.236:5000/api/signup', {
         email,
         password,
         displayName, // Include displayName in the request
