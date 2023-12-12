@@ -11,6 +11,15 @@ import Expenses from './Expenses/Expense';
 const App = () => {
   const [authenticated, setAuthenticated] = useState(false);
 
+  useEffect(() => {
+    // Set up a timer to show a warning 40 seconds before token expiry
+    const tokenExpiryWarning = setTimeout(() => {
+      alert('Your session will expire in 20 seconds. Please refresh your token.');
+    }, 40000);
+
+    return () => clearTimeout(tokenExpiryWarning);
+  }, []);
+  
   const handleLogin = () => {
     setAuthenticated(true);
   };
